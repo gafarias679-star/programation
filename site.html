@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <STYLE>
+        .tela{
+            height: 300px;
+            width: 350px;
+            border: 3px solid black;
+            margin: 0 auto;
+        }
+        .tela .Linha1{
+            margin-left: 30px;
+            margin-top: 30px;
+        }
+        .button{
+            margin-left: 30px;
+            margin-top: 30px;
+        }
+        .tela .Linha1 .label{
+            margin-right: 10px;
+        }
+    </STYLE>
+</head>
+<body>
+    <div class="tela"> 
+        <div class="Linha1">
+            <label>Numero</label>
+            <input id="num1" type="text" size="10" placeholder="">
+        </div>
+        <button id="btn1" class="button"> checar</button>
+    </div>
+</body>
+<script>
+    const btn1 = document.getElementById("btn1");
+    btn1.addEventListener("click", function(){
+        const num1 = document.getElementById("num1").value;
+        if(num1 % 2 == 0){
+            alert("O número é par");
+        }else{
+            alert("O número é ímpar");
+        }
+    });
+    </script>
+</html>
